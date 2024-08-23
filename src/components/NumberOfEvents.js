@@ -9,12 +9,11 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
         setNumber(value)
         let errorText;
         if (value === isNaN || value.length <= 0) {
-            errorText = 'Please enter a valid number'
+            setErrorAlert = 'Please enter a valid number'
         } else {
-            errorText = ''
+            setErrorAlert = ''
         }
         setCurrentNOE(value)
-        setErrorAlert(errorText)
     }
 
     return (
@@ -33,3 +32,8 @@ const NumberOfEvents = ({ setCurrentNOE, setErrorAlert }) => {
 }
 
 export default NumberOfEvents;
+
+NumberOfEvents.propTypes = {
+    setCurrentNOE: PropTypes.func.isRequired,
+    setErrorAlert: PropTypes.func.isRequired
+}
