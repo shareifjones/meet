@@ -29,3 +29,4 @@ describe('<NumberOfEvents /> component', () => {
     });
 })
 
+
