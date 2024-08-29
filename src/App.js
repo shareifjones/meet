@@ -18,7 +18,7 @@ const App = () => {
   const [warningAlert, setWarningAlert] = useState("");
 
   useEffect(() => {
-    if (navigator.onLine) {
+    if (!navigator.onLine) {
       setWarningAlert("You are currently offline.  Events may be outdated");
     } else {
       setWarningAlert("");
