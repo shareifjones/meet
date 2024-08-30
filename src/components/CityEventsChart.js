@@ -47,4 +47,4 @@ const CityEventsChart = ({ allLocations, events }) => {
     );
 }
 
-export default CityEventsChart
+export default CityEventsChart;
