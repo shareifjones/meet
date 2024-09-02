@@ -36,7 +36,13 @@ const CitySearch = ({ allLocations, setCurrentCity, setInfoAlert, setErrorAlert 
     };
 
     return (
+
         <div id="city-search">
+            <div>
+                <h1>Meet App</h1>
+                <p>Search below for the city closest to you!
+                </p>
+            </div>
             <input
                 type="text"
                 className="city"
