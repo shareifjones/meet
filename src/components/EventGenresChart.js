@@ -29,7 +29,7 @@ const EventGenresChart = ({ events }) => {
             <text
                 x={x}
                 y={y}
-                fill="#8884d8"
+                fill="white"
                 textAnchor={x > cx ? 'start' : 'end'}
                 dominantBaseline="central"
             >
@@ -45,9 +45,7 @@ const EventGenresChart = ({ events }) => {
             <PieChart
                 margin={{
                     top: 40,
-                    bottom: 40,
-                    right: 20,
-                    left: -20
+                    bottom: 40
                 }}>
                 <Pie
                     data={data}
