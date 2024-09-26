@@ -29,7 +29,7 @@ const EventGenresChart = ({ events }) => {
             <text
                 x={x}
                 y={y}
-                fill="CBC3E3"
+                fill="#000000"
                 textAnchor={x > cx ? 'start' : 'end'}
                 dominantBaseline="central"
             >
@@ -38,7 +38,7 @@ const EventGenresChart = ({ events }) => {
         ) : null;
     };
 
-    const colors = ['#0000FF', '#FF0000', '#008000', '#000000', '#FFA500'];
+    const colors = ['#0000FF', '#FF0000', '#008000', '#FFFF00', '#FFA500'];
 
     return (
         <ResponsiveContainer width="99%" height={400}>
